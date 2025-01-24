@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  display: flex;
+}
+
+.header-navbar-list {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  list-style-type: none;
+  padding: 0px;
+}

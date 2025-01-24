@@ -1,0 +1,65 @@
+.admin-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.modal-add-product {
+  background-color: #2e2e2e;
+  color: #dfe4e9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.modal-delete-product {
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.575);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-add-product-button {
+  margin-top: 30px;
+}
+
+.admin-product-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.admin-product-add-form-article {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-product-add-form-article input,
+select {
+  font-size: 18px;
+  padding-inline: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.modal-delete-product {
+  background-color: #2e2e2e;
+  color: #dfe4e9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
