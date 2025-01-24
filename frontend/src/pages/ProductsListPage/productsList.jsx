@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import ProductCard from "../../components/ProductCardComponent/productCard";
 import "./productsList.css";
 
 const ProductsList = () => {
@@ -95,20 +95,14 @@ const ProductsList = () => {
       </div>
       <div className="products-grid">
         {products.map((product) => (
-          <Link
-            to={`/products/${product.id}`}
+          <ProductCard
             key={product.id}
-            className="product-card"
-          >
-            <img
-              src={`http://localhost:4000${product.image}`}
-              alt={product.name}
-              className="product-card-image"
-            />
-            <h3 className="product-card-name">{product.name}</h3>
-            <p className="product-card-price">{product.price} €</p>
-            <p className="product-card-category">{product.category_name}</p>
-          </Link>
+            id={product.id}
+            image={product.image}
+            name={product.name}
+            price={product.price}
+            category_name={product.category_name}
+          />
         ))}
       </div>
       {loading && <p>Loading...</p>}
